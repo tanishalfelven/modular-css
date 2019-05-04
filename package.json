@@ -48,6 +48,7 @@
     "snapshot-diff": "^0.5.1",
     "sugarss": "^2.0.0",
     "svelte": "^2.16.1",
+    "svelte3": "npm:svelte@^3",
     "watchify": "^3.11.1",
     "webpack": "^4.29.6"
   },
@@ -63,6 +64,7 @@
     "@modular-css/rollup-rewriter": "file:packages/rollup-rewriter",
     "@modular-css/shortnames": "file:packages/namer",
     "@modular-css/svelte": "file:packages/svelte",
+    "@modular-css/svelte-jest": "file:packages/svelte-jest",
     "@modular-css/webpack": "file:packages/webpack"
   }
 }

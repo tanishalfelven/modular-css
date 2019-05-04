@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`svelte-jest should update all {css.foo} references in the template to use their name only 1`] = `
+"
+<div class=\\"{\\"one\\"}\\">
+    <p class=\\"{foo ? \\"two\\" : \\"three\\"}\\">
+        CONTENT
+    </p>
+</div>"
+`;
+
+exports[`svelte-jest should update all css.foo references in <script> blocks to use their name only 1`] = `
+"
+<script>
+    export default {
+        oncreate() {
+            if(true) {
+                console.log(\\"foo\\");
+            }
+
+            this.set({
+                style : \\"bar\\"
+            });
+        }
+    };
+</script>"
+`;
